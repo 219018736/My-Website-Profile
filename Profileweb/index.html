@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- GOOGLE FONTS & MATERIAL DESIGN ICONS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
+
+  <!-- LOCAL STYLES -->
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    /* Hide sections by default except the home section */
+    #about, #portfolio, #contact {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<!-- HOME SECTION -->
+<section id="home" class="container d-flex justify-content-center align-items-center text-center py-5" style="height: 100vh;">
+  <div id="homediv"> 
+    <h1>Hello, I'm <span class="text-primary">Komane Khutso</span>.</h1>
+    <p>I'm a Front-End web and mobile developer.</p>
+    <a href="#about" class="btn btn-outline-primary mt-3" onclick="showSection('about')">View my work <i class="mdi mdi-arrow-right"></i></a>
+  </div>
+</section>
+>
+
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="container py-5">
+      <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" onclick="showSection('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" onclick="showSection('about')">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" onclick="showSection('portfolio')">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" onclick="showSection('contact')">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <h2 class="text-center mb-4">ABOUT</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/me.jpeg" alt="My photo" class="img-fluid rounded-circle mb-3 w-50">
+        <h4>Who's this guy?</h4>
+        <p>I'm a Front-End Developer,enthusiastic and creative graphic designer with a
+          passion for translating ideas into visually compelling
+          designs. With experience in mobile development and
+          web development, I thrive on bringing concepts to life
+          through innovative. </p>
+        <a href="#contact" class="text-primary" onclick="showSection('contact')">Let's make something special.</a>
+      </div>
+      <div class="col-md-6">
+        <h4>Skills</h4>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 90%">CSS</div>
+        </div>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 90%">HTML</div>
+        </div>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 80%">Javascript</div>
+        </div>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 80%">React js</div>
+        </div>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 80%">React native</div>
+        </div>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 80%">java</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="container py-5">
+      <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home" onclick="showSection('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" onclick="showSection('about')">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" onclick="showSection('portfolio')">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" onclick="showSection('contact')">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <h2 class="text-center mb-4">PROJECTS</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4" id="ordering">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">ChowNow Ordering</h5>
+            <p class="card-text">React JS / Python</p>
+            <a href="#" class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+   
+  <section id="contact" class="container py-5">
+     <!-- NAVIGATION BAR -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" onclick="showSection('home')">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" onclick="showSection('about')">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio" onclick="showSection('portfolio')">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" onclick="showSection('contact')">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h2 class="text-center mb-4">CONTACT</h2>
+    <p class="text-center">Use the following details to reach out to me.</p>
+    <form class="mx-auto" style="max-width: 500px;">
+      Email address: makgantshanemk@gmail.com
+      <br>Contact No: 0636690575
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Komane Khutso. All rights reserved.</p>
+      <div>
+        <a href="https://github.com" class="text-dark mr-3"><i class="mdi mdi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JS, JQUERY, AND POPPER.JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- JAVASCRIPT TO SHOW/HIDE SECTIONS -->
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      document.querySelectorAll("section").forEach(section => {
+        section.style.display = "none";
+      });
+      // Show the selected section
+      document.getElementById(sectionId).style.display = "block";
+    }
+
+    // Show the home section by default
+    document.addEventListener("DOMContentLoaded", () => showSection("home"));
+  </script>
+</body>
+</html>
